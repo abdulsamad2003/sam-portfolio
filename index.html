@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css import -->
+    <link rel="stylesheet" href="/public/styles.css" />
+
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/4f5382bc8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>It's Samad Portfolio</title>
+  </head>
+
+  <body class="bg-[#111111] text-[rgb(214,214,214)]">
+    <div class="sidebar container h-[100%] w-[100%] mx-auto">
+      <div
+        class="profile bg-[#3333] w-[90%] mx-auto mt-4 rounded-2xl border border-[#20d9dffa] sm:w-[90%] sm:mx-auto"
+      >
+        <div
+          class="profile-info flex mt-4 mx-5 space-x-5 items-center justify-between"
+        >
+          <div
+            class="profile-img border border-[#20d9dffa] rounded-lg bg-[#1111] p-2"
+          >
+            <img
+              src="/public/img/avatar-4.png"
+              alt=""
+              width="40px"
+              class="rounded-full sm:w-14"
+            />
+          </div>
+
+          <div class="profile-headings">
+            <h1
+              class="text-[#20d9dffa] text-md font-bold font-serif sm:text-xl"
+            >
+              Abdul Samad
+            </h1>
+            <p class="text-sm sm:text-md">Web Developer</p>
+          </div>
+
+          <!-- down button for contact menu  -->
+
+          <div
+            id="down-menu"
+            class="down-menu ease-in p-px px-2 border border-[#20d9dffa] bg-[#1111] rounded-br-lg rounded-tl-lg"
+          >
+            <i class="fa-solid fa-chevron-down sm:hidden"> </i>
+            <span class="hidden sm:block text-sm sm:text-base" id="show-contact"
+              >Show Contact</span
+            >
+          </div>
+        </div>
+
+        <div class="line bg-[#20d9dffa] h-px w-[80%] mx-auto my-4"></div>
+
+        <!-- contact info  -->
+        <div
+          id="contact-down"
+          class="contact space-y-4 my-4 justify-center ml-auto hidden"
+        >
+          <div class="contact-info flex space-x-4 ml-5 items-center">
+            <div
+              class="icon bg-[#333] w-6 h-6 rounded-lg border border-[#20d9dffa] text-center"
+            >
+              <i class="fa-regular fa-envelope text-sm"></i>
+            </div>
+            <div class="contact-heading text-sm sm:text-base">
+              <h1 class="text-[#20d9dffa]">Email</h1>
+              <h4 class="text-[#f7eded]">samadj7890@gmail.com</h4>
+            </div>
+          </div>
+
+          <div class="contact-info flex space-x-4 ml-5 items-center">
+            <div
+              class="icon bg-[#333] w-6 h-6 rounded-lg border border-[#20d9dffa] text-center"
+            >
+              <i class="fa-solid fa-phone text-sm"></i>
+            </div>
+            <div class="contact-heading text-sm sm:text-base">
+              <h1 class="text-[#20d9dffa]">Phone</h1>
+              <h4 class="text-[#f7eded]">+91 6377175149</h4>
+            </div>
+          </div>
+
+          <div class="contact-info flex space-x-4 ml-5 items-center">
+            <div
+              class="icon bg-[#333] w-6 h-6 rounded-lg border border-[#20d9dffa] text-center"
+            >
+              <i class="fa-regular fa-calendar text-sm"></i>
+            </div>
+            <div class="contact-heading text-sm sm:text-base">
+              <h1 class="text-[#20d9dffa]">Birthday</h1>
+              <h4 class="text-[#f7eded]">Jan 04, 2003</h4>
+            </div>
+          </div>
+
+          <div class="contact-info flex space-x-4 ml-5 items-center">
+            <div
+              class="icon bg-[#333] w-6 h-6 rounded-lg border border-[#20d9dffa] text-center"
+            >
+              <i class="fa-sharp fa-solid fa-location-dot text-sm"></i>
+            </div>
+            <div class="contact-heading text-sm sm:text-base">
+              <h1 class="text-[#20d9dffa]">Location</h1>
+              <h4 class="text-[#f7eded]">Pune, Maharasthra</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main section  -->
+
+    <div class="sidebar container h-[100%] w-[100%] mx-auto mt-12">
+      <div
+        class="profile bg-[#3333] w-[90%] mx-auto rounded-2xl border border-[#20d9dffa] sm:w-[90%] sm:mx-auto"
+      >
+        <div class="headings my-4 px-4 space-y-2">
+          <h1
+            class="border border-[#20d9dffa] bg-[#111] text-[#fff] rounded-br-xl rounded-tl-xl w-[40%] text-center mx-auto my-6 py-2 font-bold sm:text-lg"
+          >
+            About Me
+          </h1>
+
+          <div
+            class="line h-px rounded-full bg-[#20d9dffa] w-[90%] mx-auto"
+          ></div>
+
+          <div class="flex items-baseline space-x-2 w[100%]">
+            <i
+              class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
+            ></i>
+            <p class="text-sm text-justify sm:text-[16px]">
+              I'm Creative Director and UI/UX Designer from Sydney, Australia,
+              working in web development and print media. I enjoy turning
+              complex problems into simple, beautiful and intuitive designs.
+            </p>
+          </div>
+          <div class="flex items-baseline space-x-2 w[100%]">
+            <i
+              class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
+            ></i>
+            <p class="text-sm text-justify sm:text-[16px]">
+              My job is to build your website so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way. I created web design for many
+              famous brand companies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- down fix navbar  -->
+
+    <div
+      class="sidebar hidden h-[100%] w-[100%] mx-auto mt-12 fixed left-0 right-0 bottom-0 top-[79%]"
+    >
+      <div
+        class="navbar bg-[#3333] w-[100%] border border-[#20d9dffa] rounded-tl-3xl rounded-tr-3xl bg-opacity-90 py-4 text-center space-x-4 text-sm sm:text-base sm:space-x-8"
+      >
+        <a href="#" class="hover:text-[#20d9dffa]">About</a>
+        <a href="#education" class="hover:text-[#20d9dffa]">Education</a>
+        <a href="#" class="hover:text-[#20d9dffa]">My projects</a>
+        <a href="#" class="hover:text-[#20d9dffa]">Skills</a>
+      </div>
+    </div>
+
+    <!-- education section start -->
+
+    <div
+      class="sidebar container h-[100%] w-[100%] mx-auto mt-12"
+      id="education"
+    >
+      <div
+        class="profile bg-[#3333] w-[90%] mx-auto rounded-2xl border border-[#20d9dffa] sm:w-[90%] sm:mx-auto space-y-4"
+      >
+        <!-- title  -->
+        <div class="heading">
+          <h1
+            class="border border-[#20d9dffa] bg-[#3333] rounded-br-xl rounded-tl-xl w-[50%] text-center mx-auto my-6 py-2 font-bold sm:text-lg"
+          >
+            My Education
+          </h1>
+        </div>
+
+        <!-- schooling -->
+
+        <!-- 12th std marks  -->
+
+        <div class="w-[90%] mx-auto">
+          <div class="schools flex space-x-4 items-end">
+            <i
+              class="fa-solid fa-school border border-[#20d9dffa] p-2 rounded-xl bg-[#333]"
+            ></i>
+            <h1 class="font-bold">Saint thom Ser Sec School</h1>
+          </div>
+
+          <div class="scholl-marks-info flex space-x-4 items-center mt-2">
+            <i
+              class="w-2 h-2 outline-dotted outline-[#20d9dffa] bg-[#2222] border-transparent rounded-full ml-3.5"
+            ></i>
+            <p class="pl-4 text-sm">
+              Passed Hsc in 2021 with <strong>91%</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- 10th std marks  -->
+
+        <div class="w-[90%] mx-auto">
+          <div class="schools flex space-x-4 items-end">
+            <i
+              class="fa-solid fa-school border border-[#20d9dffa] p-2 rounded-xl bg-[#333]"
+            ></i>
+            <h1 class="font-bold">A.P.S School</h1>
+          </div>
+
+          <div class="scholl-marks-info flex space-x-4 items-center mt-2">
+            <i
+              class="w-2 h-2 outline-dotted outline-[#20d9dffa] bg-[#2222] border-transparent rounded-full ml-3.5"
+            ></i>
+            <p class="pl-4 text-sm">
+              Passed Ssc in 2021 with <strong>73%</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- sppu wadias clg  -->
+
+        <div class="w-[90%] mx-auto pb-6">
+          <div class="schools flex space-x-4 items-end">
+            <i
+              class="fa-solid fa-school border border-[#20d9dffa] p-2 rounded-xl bg-[#333]"
+            ></i>
+            <h1 class="font-bold">Nowrosjee Wadia College</h1>
+          </div>
+
+          <div class="scholl-marks-info flex space-x-4 items-center mt-2">
+            <i
+              class="w-2 h-2 outline-dotted outline-[#20d9dffa] bg-[#2222] border-transparent rounded-full ml-3.5"
+            ></i>
+            <p class="pl-4 text-sm">A first-year undergraduate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- my projects Section  -->
+
+    <div
+      class="sidebar container h-[100vh] w-[100%] mx-auto mt-12"
+      id="education"
+    >
+      <!-- inside my project container  -->
+      <div
+        class="profile bg-[#3333] w-[90%] mx-auto my-4 rounded-2xl border border-[#20d9dffa] sm:w-[90%] sm:mx-auto space-y-4"
+      >
+        <!-- title  -->
+        <div class="heading">
+          <h1
+            class="border border-[#20d9dffa] bg-[#3333] font-semibold rounded-br-xl rounded-tl-xl w-[50%] text-center mx-auto my-6 py-2 sm:text-lg"
+          >
+            My Portfolio
+          </h1>
+        </div>
+        <!-- title section end  -->
+
+        <!-- category section  -->
+        <div class="mb-4">
+          <div
+            id="category"
+            class="flex font-thin justify-between mb-px mx-6 border border-[#20d9dffa] py-3 px-3 rounded-xl items-center"
+          >
+            <h1 id="color-category" class="text-slate-200">Select category</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <!-- selecting option  -->
+          <div
+            id="selecting-option"
+            class="hidden font-thin justify-between mb-6 mx-6 border border-[#20d9dffa] py-3 px-3 mt-4 rounded-xl items-center space-y-4"
+          >
+            <div class="hover:bg-[#20d9dffa] rounded-md group p-2">
+              <h1
+                class="text-slate-200 group-hover:text-[#000] group-hover:font-[400]"
+              >
+                All
+              </h1>
+            </div>
+            <div class="hover:bg-[#20d9dffa] rounded-md group p-2">
+              <h1
+                class="text-slate-200 group-hover:text-[#000] group-hover:font-[400]"
+              >
+                Html , Css
+              </h1>
+            </div>
+            <div class="hover:bg-[#20d9dffa] rounded-md group p-2">
+              <h1
+                class="text-slate-200 group-hover:text-[#000] group-hover:font-[400]"
+              >
+                Javscript
+              </h1>
+            </div>
+            <div class="hover:bg-[#20d9dffa] rounded-md group p-2">
+              <h1
+                class="text-slate-200 group-hover:text-[#000] group-hover:font-[400]"
+              >
+                tailwindcss
+              </h1>
+            </div>
+          </div>
+          <!-- Selecting Option section end  -->
+        </div>
+
+        <!-- category section end  -->
+
+        <div class="grid pt-4 sm:grid-cols-2 md:grid-cols-3">
+          <div class="group mx-auto space-y-4 my-8 w-[80%] relative">
+            <img
+              src="/public/img/Medium-Screen-1024x800.png"
+              alt=""
+              class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img"
+            />
+            <a
+              target="_blank"
+              href="https://abdulsamad2003.github.io/counter-project/"
+              class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] border-[#] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+            >
+              <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+            >
+
+            <h1 class1="font-semibold">Counter Project</h1>
+            <a
+              target="_blank"
+              href="https://github.com/abdulsamad2003/counter-project.git"
+              class="font-thin text-[#20d9dffa]"
+              >Source Code</a
+            >
+          </div>
+
+          <div class="group mx-auto space-y-4 my-8 w-[80%] relative">
+            <img
+              src="/public/img/abdulsamad2003.github.io-screenshot.png"
+              alt=""
+              class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img"
+            />
+            <a
+              target="_blank"
+              href="https://abdulsamad2003.github.io/r-c-g/"
+              class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+            >
+              <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+            >
+            <h1 class1="font-semibold">Random Color</h1>
+            <a
+              target="_blank"
+              href="https://github.com/abdulsamad2003/r-c-g.git"
+              class="font-thin text-[#20d9dffa]"
+              >Source Code</a
+            >
+          </div>
+
+          <div class="group mx-auto space-y-4 my-8 w-[80%] relative">
+            <img
+              src="/public/img/university.png"
+              alt=""
+              class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img"
+            />
+            <a
+              target="_blank"
+              href="https://abdulsamad2003.github.io/hojayaar/"
+              class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+            >
+              <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+            >
+            <h1 class1="font-semibold">University Website</h1>
+            <a
+              target="_blank"
+              href="https://github.com/abdulsamad2003/hojayaar.git"
+              class="font-thin text-[#20d9dffa]"
+              >Source Code</a
+            >
+          </div>
+
+          <div class="group mx-auto space-y-4 my-8 w-[80%] relative">
+            <img
+              src="/public/img/meta-web.png"
+              alt=""
+              class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img"
+            />
+            <a
+              target="_blank"
+              href="https://abdulsamad2003.github.io/meta-final/"
+              class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+            >
+              <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+            >
+            <h1 class1="font-semibold">Meta Website</h1>
+            <a
+              target="_blank"
+              href="https://github.com/abdulsamad2003/meta-final.git"
+              class="font-thin text-[#20d9dffa]"
+              >Source Code</a
+            >
+          </div>
+
+          <div class="group mx-auto space-y-4 my-8 w-[80%] relative">
+            <img
+              src="/public/img/sevio.png"
+              alt=""
+              class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img"
+            />
+            <a
+              target="_blank"
+              href="https://abdulsamad2003.github.io/web-sevio/"
+              class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+            >
+              <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+            >
+            <h1 class1="font-semibold">Sevio Website</h1>
+            <a
+              target="_blank"
+              href="https://github.com/abdulsamad2003/web-sevio.git"
+              class="font-thin text-[#20d9dffa]"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- inside my project container  -->
+    </div>
+
+    <script src="/public/portfolio.js"></script>
+  </body>
+</html>
