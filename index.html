@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- css import -->
-    <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="stylesheet" href="/public/styles.css" />
 
     <!-- tailwind link  -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,7 +40,7 @@
             class="profile-img border border-[#20d9dffa] rounded-lg bg-[#1111] p-2"
           >
             <img
-              src="./public/img/avatar-4.png"
+              src="/public/img/avatar-4.png"
               alt=""
               width="40px"
               class="rounded-full sm:w-14"
@@ -145,29 +145,32 @@
             <div
               class="line h-px rounded-full bg-[#20d9dffa] w-[90%] mx-auto"
             ></div>
+            
+        
+              <div class="flex items-baseline space-x-2 w[100%]">
+                <i
+                  class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
+                ></i>
+                <p class="text-sm text-justify sm:text-[16px]">
+                  Heyy..! I Am Abdul Samad form Pune, Maharasthra, I'm Junior
+                  web-developer. I enjoy turning complex problems into simple,
+                  beautiful and intuitive designs.
+                </p>
+              </div>
+              <div class="flex items-baseline space-x-2 w[100%] ">
+                <i
+                  class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
+                ></i>
+                <p class="text-sm text-justify sm:text-[16px]">
+                  My job is to build your website so that it is functional and
+                  user-friendly but at the same time attractive. Moreover, I add
+                  personal touch to your product and make sure that is
+                  eye-catching and easy to use. My aim is to bring across your
+                  message and identity in the most creative way.
+                </p>
+              </div>
+ 
 
-            <div class="flex items-baseline space-x-2 w[100%]">
-              <i
-                class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
-              ></i>
-              <p class="text-sm text-justify sm:text-[16px]">
-                Heyy..! I Am Abdul Samad form Pune, Maharasthra, I'm Junior
-                web-developer. I enjoy turning complex problems into simple,
-                beautiful and intuitive designs.
-              </p>
-            </div>
-            <div class="flex items-baseline space-x-2 w[100%]">
-              <i
-                class="fa-solid fa-chevron-right ml-3.5 text-xs text-[#20d9dffa] items-baseline"
-              ></i>
-              <p class="text-sm text-justify sm:text-[16px]">
-                My job is to build your website so that it is functional and
-                user-friendly but at the same time attractive. Moreover, I add
-                personal touch to your product and make sure that is
-                eye-catching and easy to use. My aim is to bring across your
-                message and identity in the most creative way.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -178,12 +181,12 @@
         class="sidebar z-50 w-[100%] mx-auto mt-12 fixed left-0 right-0 bottom-0"
       >
         <div
-          class="navbar backdrop-blur-lg bg-[000] w-[100%] border border-[#20d9dffa] rounded-tl-3xl rounded-tr-3xl bg-opacity-90 py-4 text-center space-x-4 text-sm sm:text-base sm:space-x-8"
+          class="navbar bg-opacity-0 backdrop-blur-lg bg-[rgba(32,217,223,0.7)]  w-[100%] border-2 border-[#fff] rounded-tl-3xl rounded-tr-3xl py-4 text-center space-x-4 text-sm sm:text-base sm:space-x-8"
         >
-          <a href="#" class="hover:text-[#20d9dffa]">About</a>
-          <a href="#education" class="hover:text-[#20d9dffa]">Education</a>
-          <a href="#projects" class="hover:text-[#20d9dffa]">My projects</a>
-          <a href="#contact-me" class="hover:text-[#20d9dffa]">Contact-me</a>
+          <a href="#" class="hover:text-[#000] hover:font-bold">About</a>
+          <a href="#education" class="hover:text-[#000] hover:font-bold" >Education</a>
+          <a href="#projects" class="hover:text-[#000] hover:font-bold">My projects</a>
+          <a href="#contact-me" class="hover:text-[#000] hover:font-bold">Contact-me</a>
         </div>
       </div>
       <!-- down fix navbar ends  -->
@@ -309,6 +312,13 @@
                 All
               </div>
               <div
+                onclick="show('Angular')"
+                class="select-btn hover:bg-[#20d9dffa] hover:text-black hover:font-[400] rounded-md group p-2"
+                data-item="Angular"
+              >
+                Angular
+              </div>
+              <div
                 onclick="show('HtmlCss')"
                 class="select-btn hover:bg-[#20d9dffa] hover:text-black hover:font-[400] rounded-md group p-2"
                 data-item="HtmlCss"
@@ -336,60 +346,26 @@
               class="portfolio-container grid pt-4 sm:grid-cols-2 md:grid-cols-3 z-0"
               data-port="all"
             >
-              <!-- counter-project -->
+              <!-- Crema & Co Website -->
               <div
-                class="portfolio-project group mx-auto space-y-4 my-8 w-[80%] relative z-0 Javascript"
-                data-port="Javascript"
+                class="portfolio-project group mx-auto space-y-4 my-8 w-[80%] relative Angular TailwindCss"
+                data-port="Angular TailwindCss"
               >
                 <img
-                  src="./public/img/Medium-Screen-1024x800.png"
-                  alt=""
-                  class="z-0 rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
-                />
-                <a
-                  target="_blank"
-                  href="https://abdulsamad2003.github.io/counter-project/"
-                  class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] border-[#] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
-                >
-                  <h1 class="text-sm sm:text-xs">Watch Live</h1></a
-                >
-
-                <h1 class1="font-semibold">Counter Project</h1>
-                <a
-                  target="_blank"
-                  href="https://github.com/abdulsamad2003/counter-project.git"
-                  class="font-thin text-[#20d9dffa]"
-                  >Source Code</a
-                >
-              </div>
-              <!-- counter-project End-->
-
-              <!-- random color  -->
-              <div
-                class="portfolio-project group mx-auto space-y-4 my-8 w-[80%] relative Javascript"
-                data-port="Javascript"
-              >
-                <img
-                  src="./public/img/abdulsamad2003.github.io-screenshot.png"
+                  src="/public/img/crema.png"
                   alt=""
                   class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
                 />
                 <a
                   target="_blank"
-                  href="https://abdulsamad2003.github.io/r-c-g/"
+                  href="https://crema-and-co.web.app/"
                   class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
                 >
                   <h1 class="text-sm sm:text-xs">Watch Live</h1></a
                 >
-                <h1 class1="font-semibold">Random Color</h1>
-                <a
-                  target="_blank"
-                  href="https://github.com/abdulsamad2003/r-c-g.git"
-                  class="font-thin text-[#20d9dffa]"
-                  >Source Code</a
-                >
+                <h1 class1="font-semibold">Crema & Co</h1>
               </div>
-              <!-- random color Ends -->
+              <!-- Crema & Co Website Ends -->
 
               <!-- University Website -->
               <div
@@ -397,7 +373,7 @@
                 data-port="HtmlCss"
               >
                 <img
-                  src="./public/img/university.png"
+                  src="/public/img/university.png"
                   alt=""
                   class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
                 />
@@ -424,7 +400,7 @@
                 data-port="TailwindCss"
               >
                 <img
-                  src="./public/img/meta-web.png"
+                  src="/public/img/meta-web.png"
                   alt=""
                   class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
                 />
@@ -451,7 +427,7 @@
                 data-port="HtmlCss"
               >
                 <img
-                  src="./public/img/sevio.png"
+                  src="/public/img/sevio.png"
                   alt=""
                   class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
                 />
@@ -477,7 +453,7 @@
                 data-port="HtmlCss"
               >
                 <img
-                  src="./public/img/flower.png"
+                  src="/public/img/flower.png"
                   alt=""
                   class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
                 />
@@ -497,6 +473,59 @@
                 >
               </div>
               <!-- flower website section ends  -->
+              <!-- counter-project -->
+              <div
+                class="portfolio-project group mx-auto space-y-4 my-8 w-[80%] relative z-0 Javascript"
+                data-port="Javascript"
+              >
+                <img
+                  src="/public/img/Medium-Screen-1024x800.png"
+                  alt=""
+                  class="z-0 rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
+                />
+                <a
+                  target="_blank"
+                  href="https://abdulsamad2003.github.io/counter-project/"
+                  class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] border-[#] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+                >
+                  <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+                >
+
+                <h1 class1="font-semibold">Counter Project</h1>
+                <a
+                  target="_blank"
+                  href="https://github.com/abdulsamad2003/counter-project.git"
+                  class="font-thin text-[#20d9dffa]"
+                  >Source Code</a
+                >
+              </div>
+              <!-- counter-project End-->
+              <!-- random color  -->
+              <div
+                class="portfolio-project group mx-auto space-y-4 my-8 w-[80%] relative Javascript"
+                data-port="Javascript"
+              >
+                <img
+                  src="/public/img/abdulsamad2003.github.io-screenshot.png"
+                  alt=""
+                  class="rounded-lg w-[100%] sm:w-[200px] hover:opacity-60 portfolio-img lg:w-[250px] xl:w-[210px]"
+                />
+                <a
+                  target="_blank"
+                  href="https://abdulsamad2003.github.io/r-c-g/"
+                  class="img-watchlive absolute bottom-[64px] right-0 p-2 bg-[#111] group-hover:bg-[#20d9dffa] group-hover:text-[#000] group-hover:font-semibold rounded-tl-2xl rounded-br-[.4rem] transition-all duration-900 ease-in-out sm:right-7 md:right-0"
+                >
+                  <h1 class="text-sm sm:text-xs">Watch Live</h1></a
+                >
+                <h1 class1="font-semibold">Random Color</h1>
+                <a
+                  target="_blank"
+                  href="https://github.com/abdulsamad2003/r-c-g.git"
+                  class="font-thin text-[#20d9dffa]"
+                  >Source Code</a
+                >
+              </div>
+              <!-- random color Ends -->
             </div>
             <!-- portoilio starts Ends-->
           </div>
@@ -541,39 +570,35 @@
 
             <div class="links flex my-20">
               <div class="flex mx-auto space-x-6 md:space-x-10">
-                <div
+                <a
+                  href="https://github.com/abdulsamad2003"
+                  target="_blank"
                   class="git-hub border shadow-[#20d9dffa] shadow border-[#20d9dffa] px-3 py-1 rounded-md hover:bg-[#20d9dffa] hover:text-black hover:font-[500]"
                 >
-                  <a target="_blank" href="https://github.com/abdulsamad2003"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </div>
-                <div
+                  <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/abdul-samad-a58a83251/"
                   class="linked-in border shadow-[#20d9dffa] shadow border-[#20d9dffa] px-3 py-1 rounded-md hover:bg-[#20d9dffa] hover:text-black hover:font-[500]"
                 >
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/abdul-samad-a58a83251/"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </div>
-                <div
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/samxd.joad_/"
                   class="instagram border shadow-[#20d9dffa] shadow border-[#20d9dffa] px-3 py-1 rounded-md hover:bg-[#20d9dffa] hover:text-black hover:font-[500]"
                 >
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/samxd.joad_/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </div>
-                <div
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.snapchat.com/add/samadjoad?share_id=hu5CR0dKxmQ&locale=en-IN"
+                  target="_blank"
                   class="snapchat border shadow-[#20d9dffa] shadow border-[#20d9dffa] px-3 py-1 rounded-md hover:bg-[#20d9dffa] hover:text-black hover:font-[500]"
                 >
-                  <a
-                    href="https://www.snapchat.com/add/samadjoad?share_id=hu5CR0dKxmQ&locale=en-IN"
-                    ><i class="fa-brands fa-snapchat"></i
-                  ></a>
-                </div>
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -583,6 +608,6 @@
     </section>
     <!-- main section Ends  -->
 
-    <script src="./public/portfolio.js"></script>
+    <script src="/public/portfolio.js"></script>
   </body>
 </html>
