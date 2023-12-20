@@ -7,6 +7,18 @@
   text-transform: uppercase;
   scroll-behavior: smooth;
 }
+.heading{
+  position: relative;
+}
+.profile{
+  position: relative;
+}
+canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 /* 
 .img-watchlive {
  position: absolute;
