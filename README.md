@@ -67,4 +67,4 @@ If you have any questions or would like to get in touch, feel free to contact me
 
 ## Live Link
 
-Check out the live version of my portfolio [here](https://abdulsamad2003.github.io/sam-portfolio/).
+Check out the live version of my portfolio [here]((https://abdulsamad2003.github.io/sam-portfolio/)).
