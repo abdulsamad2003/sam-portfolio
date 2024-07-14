@@ -63,8 +63,9 @@ If you have any questions or would like to get in touch, feel free to contact me
 
 - Email: samadj7890@gmail.com
 - LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/abdul-samad-joad-a58a83251)
-- Portfolio: [Your Portfolio Website]((https://abdulsamad2003.github.io/sam-portfolio/))
+- Portfolio: [Your Portfolio Website](https://abdulsamad2003.github.io/sam-portfolio/)
 
 ## Live Link
 
-Check out the live version of my portfolio [here]((https://abdulsamad2003.github.io/sam-portfolio/)).
+Check out the live version of my portfolio 
+- [Live Link](https://abdulsamad2003.github.io/sam-portfolio/)
